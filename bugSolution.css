@@ -1,0 +1,16 @@
+/* bugSolution.css */
+#container {
+  width: 500px;
+}
+
+#element {
+  width: calc(100% - 50px); /* Correct: Subtracts from container width */
+  background-color: lightblue;
+  box-sizing: border-box; /* Ensure padding/border don't affect width calculation*/
+}
+
+/* Avoid mixing units within calc() */
+#another-element {
+  height: calc(100px + 20%);/*Consistent unit handling */
+  background-color: lightgreen;  
+} 
